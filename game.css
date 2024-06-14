@@ -75,9 +75,8 @@
     }
 }
 
-
 .container {
-    width: 60vw;
+    width: 90vw;
     max-width: 90vw;
     margin: 10vh auto;
     display: none;
@@ -86,7 +85,7 @@
 }
 
 .score-board {
-    width: 50vw;
+    width: 80vw;
     display: flex;
     justify-content: space-between;
     font-weight: 800;
@@ -97,7 +96,7 @@
 }
 
 .progress-bar {
-    width: 50vw;
+    width: 80vw;
     height: 30px;
     border: 3px solid teal;
     border-radius: 4px;
@@ -112,10 +111,10 @@
 }
 
 .question {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 600;
     color: black;
-    width: 50vw;
+    width: 80vw;
 }
 
 .options {
@@ -131,17 +130,18 @@
     width: 100%;
     border: 3px solid teal;
     margin: 5px;
-    width: 40vw;
-    height: 40px;
+    width: 60vw;
+    height: 60px;
     display: flex;
     align-items: center;
     font-weight: 700;
-    font-size: 1vw;
     padding-right: 5px;
 }
 
 .option>p {
-    width: 35vw;
+
+    width: 40vw;
+
 }
 
 .option::before {
@@ -154,12 +154,13 @@
     background-color: teal;
     color: white;
     font-weight: 800;
-    margin-right: 5px;
+    
+    margin-right: 10px;
 }
 
 @media screen and (min-width: 735px) {
     .option {
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .score-board {
@@ -168,8 +169,21 @@
 }
 
 @media screen and (max-width: 735px) {
+    .container{
+        width: 90vw;
+    }
+    .score-board{
+        width: 80vw;
+    }
+    .progress-bar{
+        width: 80vw;
+    }
+    .question{
+        width: 80vw;
+    }
     .option {
-        font-size: 2vw;
+        font-size: 2.5vw;
+        width: 70vw;
     }
 
     .score-board {
