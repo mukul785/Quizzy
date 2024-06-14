@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy - Result</title>
+    <link rel="stylesheet" href="end.css">
+</head>
+<body>
+    <div class="container">
+        <div id="finalScore" class="score">0</div>
+        <form>
+            <input required name="username" id="username" class="username-input" type="text" placeholder="Username">
+            <button class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" type="submit" disabled>Save</button>
+            <a class="btn" href="game.html">Play again!</a>
+            <a class="btn" href="index.html">Go Home</a>
+        </form>
+    </div>
+    <script src="end.js"></script>
+</body>
+</html>

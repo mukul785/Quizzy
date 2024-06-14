@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy - Play</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="loader" class="loader1"></div>
+    <div id="container" class="container">
+        <div class="score-board">
+            <div class="question-count">
+                <p>Question</p>
+                <p id="quesCountDisplay">1/3</p>
+            </div>
+            <div class="score">
+                <p>Score</p>
+                <p id="scoreDisplay">0</p>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div id="question" class="question">
+            <p>What is the answer of this question?</p>
+        </div>
+        <div class="options">
+            <div class="option option1" data-number="1"><p>Option 1 is the correct option</p></div>
+            <div class="option option2" data-number="2"><p>Option 2</p></div>
+            <div class="option option3" data-number="3"><p>Option 3</p></div>
+            <div class="option option4" data-number="4"><p>Option 4</p></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
