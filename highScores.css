@@ -3,14 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     background-color: aliceblue;
+    transition: all ease 0.3s;
 }
 .container{
-    width: 80vw;
+    width: 90vw;
     max-width: 90vw;
     margin: 10vh auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.high-score{
+    font-size: 1.25rem;
+    list-style: none;
+    padding: 2px;
 }
 .high-score-display{
     display: flex;
@@ -21,7 +27,7 @@
 }
 .btn{
     border: none;
-    width: 25vw;
+    width: 35vw;
     padding: 10px;
     margin-bottom: 10px;
     color: teal;
@@ -35,4 +41,9 @@
 a{
     text-decoration: none;
     text-align: center;
+}
+@media screen and (min-width: 735px) {
+    .btn{
+        width: 15vw;
+    }
 }
