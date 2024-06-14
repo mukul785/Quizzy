@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     background-color: aliceblue;
+    transition: all ease 0.2s;
 }
 .container{
-    width: 60vw;
+    width: 90vw;
     max-width: 90vw;
     margin: 10vh auto;
     display: flex;
@@ -26,14 +27,14 @@ form{
 }
 .username-input{
     border: none;
-    width: 25vw;
+    width: 50vw;
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 4px 4px 9px 1px rgba(0, 128, 128, 0.4);
 }
 .btn{
     border: none;
-    width: 25vw;
+    width: 50vw;
     padding: 10px;
     margin-bottom: 10px;
     color: teal;
@@ -42,9 +43,16 @@ form{
 }
 .btn:hover{
     box-shadow: 4px 4px 9px 1px rgba(0, 128, 128, 0.4);
-    transition: all ease 0.5s;
 }
 form > a{
     text-decoration: none;
     text-align: center;
+}
+@media screen and (min-width: 735px) {
+    .username-input{
+        width: 25vw;
+    }
+    .btn{
+        width: 25vw;
+    }
 }
